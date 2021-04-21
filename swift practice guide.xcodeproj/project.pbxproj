@@ -15,6 +15,7 @@
 		32D783692630E7FF00909C41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32D783672630E7FF00909C41 /* LaunchScreen.storyboard */; };
 		32D783742630E7FF00909C41 /* swift_practice_guideTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D783732630E7FF00909C41 /* swift_practice_guideTests.swift */; };
 		32D7837F2630E7FF00909C41 /* swift_practice_guideUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D7837E2630E7FF00909C41 /* swift_practice_guideUITests.swift */; };
+		32D783902630E8E700909C41 /* AlertError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D7838F2630E8E700909C41 /* AlertError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		32D7837A2630E7FF00909C41 /* swift practice guideUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift practice guideUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32D7837E2630E7FF00909C41 /* swift_practice_guideUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_practice_guideUITests.swift; sourceTree = "<group>"; };
 		32D783802630E7FF00909C41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32D7838F2630E8E700909C41 /* AlertError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				32D783652630E7FF00909C41 /* Assets.xcassets */,
 				32D783672630E7FF00909C41 /* LaunchScreen.storyboard */,
 				32D7836A2630E7FF00909C41 /* Info.plist */,
+				32D7838F2630E8E700909C41 /* AlertError.swift */,
 			);
 			path = "swift practice guide";
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32D783612630E7FD00909C41 /* ViewController.swift in Sources */,
+				32D783902630E8E700909C41 /* AlertError.swift in Sources */,
 				32D7835D2630E7FD00909C41 /* AppDelegate.swift in Sources */,
 				32D7835F2630E7FD00909C41 /* SceneDelegate.swift in Sources */,
 			);
