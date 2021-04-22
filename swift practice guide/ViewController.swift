@@ -43,11 +43,11 @@ protocol APIConfigure {
     associatedtype ResponseEntity: Codable
     
     static var path: String { get }
-    static func request(completion: ((ResponseEntity) -> ())?)
+    static func request(completion: ((ResponseEntity) -> Void)?)
 }
 
 extension APIConfigure {
-    static func request(completion: ((ResponseEntity) -> ())?) {
+    static func request(completion: ((ResponseEntity) -> Void)?) {
         AF
             .request(Self.path)
             .response(completionHandler: {response in
