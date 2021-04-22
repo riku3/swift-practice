@@ -32,10 +32,6 @@ class ViewController: UIViewController {
                 self.descriptionLabel.text = user.description
             })
     }
-    
-    
-
-
 }
 
 struct User: Codable {
@@ -43,3 +39,20 @@ struct User: Codable {
     var description: String
 }
 
+protocol APIConfigure {
+    static var path: String { get }
+    static func request()
+}
+
+extension APIConfigure {
+    static func request() {
+        AF
+            .request(Self.path)
+            .response(completionHandler: {response in
+                guard let data = response.data,
+                      let xxx = try? JSONDecoder().decode(User.self, from: data) else {
+                    return
+                }
+            })
+    }
+}
