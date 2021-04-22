@@ -1,0 +1,6 @@
+framework module Pods_swift_practice_guide_swift_practice_guideUITests {
+  umbrella header "Pods-swift practice guide-swift practice guideUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
