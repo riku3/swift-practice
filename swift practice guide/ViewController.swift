@@ -21,16 +21,10 @@ class ViewController: UIViewController {
     }
     
     func hoge() {
-        AF
-            .request("https://qiita.com/api/v2/users/akeome")
-            .response(completionHandler: { response in
-                guard let data = response.data,
-                      let user = try? JSONDecoder().decode(User.self, from: data) else {
-                    return
-                }
-                self.idLabel.text = user.id
-                self.descriptionLabel.text = user.description
-            })
+        APIClient.UserGet.request(completion: { user in
+            self.idLabel.text = user.id
+            self.descriptionLabel.text = user.description
+        })
     }
 }
 
@@ -38,21 +32,30 @@ struct User: Codable {
     var id: String
     var description: String
 }
+struct APIClient {
+    struct UserGet: APIConfigure {
+        static var path = "https://qiita.com/api/v2/users/akeome"
+        typealias ResponseEntity = User
+    }
+}
 
 protocol APIConfigure {
+    associatedtype ResponseEntity: Codable
+    
     static var path: String { get }
-    static func request()
+    static func request(completion: ((ResponseEntity) -> ())?)
 }
 
 extension APIConfigure {
-    static func request() {
+    static func request(completion: ((ResponseEntity) -> ())?) {
         AF
             .request(Self.path)
             .response(completionHandler: {response in
                 guard let data = response.data,
-                      let xxx = try? JSONDecoder().decode(User.self, from: data) else {
+                      let entity = try? JSONDecoder().decode(ResponseEntity.self, from: data) else {
                     return
                 }
+                completion?(entity)
             })
     }
 }
