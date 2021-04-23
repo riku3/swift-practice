@@ -22,6 +22,10 @@ class Some {
         someStruct?.delete()
         print(tempDataStruct)
         
+        let delegate = TwoPersonsGameDelegate()
+        let twoPersonGame = Game()
+        twoPersonGame.delegate = delegate
+        twoPersonGame.start()
     }
 }
 
@@ -40,5 +44,34 @@ struct SomeStruct2 {
     }
     func delete() {
         tempDataStruct  = nil
+    }
+}
+
+protocol GameDelegate: AnyObject {
+    var numberOfPlayers: Int { get }
+    func gameDidStart(_ game: Game)
+    func gameDidEnd(_ game: Game)
+}
+
+class TwoPersonsGameDelegate: GameDelegate {
+    var numberOfPlayers: Int { return 2}
+    
+    func gameDidStart(_ game: Game) {
+        print("start")
+    }
+    
+    func gameDidEnd(_ game: Game) {
+        print("end")
+    }
+}
+
+class Game {
+    weak var delegate: GameDelegate?
+    
+    func start() {
+        print(delegate?.numberOfPlayers ?? 0)
+        delegate?.gameDidStart(self)
+        print("playing")
+        delegate?.gameDidEnd(self)
     }
 }
