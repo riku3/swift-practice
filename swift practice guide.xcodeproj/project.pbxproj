@@ -45,6 +45,7 @@
 		24C08B11820910A83DB25133 /* Pods-swift practice guide-swift practice guideUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift practice guide-swift practice guideUITests.debug.xcconfig"; path = "Target Support Files/Pods-swift practice guide-swift practice guideUITests/Pods-swift practice guide-swift practice guideUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		324F6896263167B3000EF4B2 /* Generics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generics.swift; sourceTree = "<group>"; };
 		32A7F4992631783400058AAE /* Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Design.swift; sourceTree = "<group>"; };
+		32A7F49E26326CBD00058AAE /* DispatchPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = DispatchPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		32D783592630E7FD00909C41 /* swift practice guide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift practice guide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32D7835C2630E7FD00909C41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32D7835E2630E7FD00909C41 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -145,6 +146,7 @@
 				32D783942631417A00909C41 /* Protocol.swift */,
 				324F6896263167B3000EF4B2 /* Generics.swift */,
 				32A7F4992631783400058AAE /* Design.swift */,
+				32A7F49E26326CBD00058AAE /* DispatchPlayground.playground */,
 			);
 			path = "swift practice guide";
 			sourceTree = "<group>";
