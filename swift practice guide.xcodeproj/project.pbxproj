@@ -46,6 +46,8 @@
 		324F6896263167B3000EF4B2 /* Generics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generics.swift; sourceTree = "<group>"; };
 		32A7F4992631783400058AAE /* Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Design.swift; sourceTree = "<group>"; };
 		32A7F49E26326CBD00058AAE /* DispatchPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = DispatchPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		32A7F4A22632E6E000058AAE /* JsonPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = JsonPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		32A7F4A62632EA4600058AAE /* HTTPPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = HTTPPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		32D783592630E7FD00909C41 /* swift practice guide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift practice guide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32D7835C2630E7FD00909C41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32D7835E2630E7FD00909C41 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -147,6 +149,8 @@
 				324F6896263167B3000EF4B2 /* Generics.swift */,
 				32A7F4992631783400058AAE /* Design.swift */,
 				32A7F49E26326CBD00058AAE /* DispatchPlayground.playground */,
+				32A7F4A22632E6E000058AAE /* JsonPlayground.playground */,
+				32A7F4A62632EA4600058AAE /* HTTPPlayground.playground */,
 			);
 			path = "swift practice guide";
 			sourceTree = "<group>";
